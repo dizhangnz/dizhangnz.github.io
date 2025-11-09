@@ -1,0 +1,4 @@
+baseURL = 'https://hidi.work/'
+languageCode = 'en-us'
+title = 'Hi Di'
+theme = 'mytheme'
