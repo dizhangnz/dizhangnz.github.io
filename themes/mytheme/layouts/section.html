@@ -1,11 +1,24 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-      {{ .Summary }}
-    </section>
-  {{ end }}
+  <ul class="post-list">
+    {{ range .Pages }}
+      <li class="post-card">
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        </div>
+        {{ with .Description }}
+          <p class="post-description">{{ . }}</p>
+        {{ end }}
+        {{ with .GetTerms "tags" }}
+          <div class="post-tags">
+            {{ range . }}
+              <a href="{{ .RelPermalink }}" class="tag">{{ .LinkTitle }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
 {{ end }}

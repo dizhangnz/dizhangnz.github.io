@@ -1,11 +1,18 @@
 <header>
-  <h1><a href="{{ "/" | relLangURL }}">{{ site.Title }}</a></h1>
-  <nav>
-    <a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
-    <a href="{{ "posts" | relLangURL }}">{{ i18n "posts" }}</a>
-  </nav>
-  <div class="lang-switcher">
-    <a href="/en/" lang="en">English</a>
-    <a href="/zh/" lang="zh">中文</a>
+  <div class="container">
+    <div class="header-inner">
+      <div class="site-branding">
+        <h1><a href="{{ "/" | relLangURL }}">{{ site.Title }}</a></h1>
+        <!--<p class="site-tagline">Notes on code, math, and things in between</p>-->
+      </div>
+      <nav>
+        <a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+        <!--<a href="{{ "posts" | relLangURL }}">{{ i18n "posts" }}</a>-->
+      </nav>
+      <div class="lang-switcher">
+        <a href="/en/" lang="en" class="{{ if eq site.Language.Lang "en" }}active{{ end }}">EN</a>
+        <a href="/zh/" lang="zh" class="{{ if eq site.Language.Lang "zh" }}active{{ end }}">中文</a>
+      </div>
+    </div>
   </div>
 </header>
