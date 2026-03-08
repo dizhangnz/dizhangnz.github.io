@@ -1,2 +1,11 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header>
+  <h1><a href="{{ "/" | relLangURL }}">{{ site.Title }}</a></h1>
+  <nav>
+    <a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+    <a href="{{ "posts" | relLangURL }}">{{ i18n "posts" }}</a>
+  </nav>
+  <div class="lang-switcher">
+    <a href="/en/" lang="en">English</a>
+    <a href="/zh/" lang="zh">中文</a>
+  </div>
+</header>

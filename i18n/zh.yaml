@@ -1,0 +1,91 @@
+global:
+  language: "简体中文"
+
+article:
+  anchor_label: "锚点"
+  date: "{{ .Date }}"
+  date_updated: "更新于: {{ .Date }}"
+  draft: "草稿"
+  edit_title: "编辑内容"
+  reading_time:
+    one: "{{ .Count }} 分钟阅读"
+    other: "{{ .Count }} 分钟阅读"
+  reading_time_title: "阅读时间"
+  table_of_contents: "目录"
+  word_count:
+    one: "{{ .Count }} 字"
+    other: "{{ .Count }} 字"
+
+a11y:
+  title: "无障碍设置"
+  disable_blur: "禁用模糊效果"
+  disable_images: "禁用背景图片"
+  show_link_underline: "显示链接下划线"
+  font_size: "字体大小"
+
+author:
+  byline_title: "作者"
+
+code:
+  copy: "复制"
+  copied: "已复制"
+
+error:
+  404_title: "找不到页面"
+  404_error: "404 错误"
+  404_description: "您请求的页面似乎不存在。"
+
+footer:
+  powered_by: "由 {{ .Hugo }} &amp; {{ .Theme }} 强力驱动"
+
+list:
+  externalurl_title: "链接到外部网站"
+  no_articles: "这里还没有任何文章可以列出。"
+
+nav:
+  scroll_to_top_title: "返回顶部"
+  skip_to_main: "跳过正文"
+
+search:
+  open_button_title: "搜索 (/)"
+  close_button_title: "关闭 (Esc)"
+  input_placeholder: "搜索"
+
+sharing:
+  email: "通过电子邮件发送"
+  facebook: "分享到 Facebook"
+  linkedin: "分享到 LinkedIn"
+  twitter: "分享到 Twitter"
+  whatsapp: "通过 WhatsApp 分享"
+
+shortcode:
+  recent_articles: "最近的文章"
+
+recent:
+  show_more: "显示更多"
+
+home: "首页"
+
+posts:
+  other: "文章"
+
+taxonomies:
+  other: "分类"
+
+tags:
+  other: "标签"
+
+read_more:
+  other: "阅读全文"
+
+prev:
+  other: "上一页"
+
+next:
+  other: "下一页"
+
+no_older_posts:
+  other: "没有更早的文章"
+
+no_newer_posts:
+  other: "没有更新的文章"
