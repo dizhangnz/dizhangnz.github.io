@@ -10,6 +10,12 @@
         <!--<a href="{{ "posts" | relLangURL }}">{{ i18n "posts" }}</a>-->
       </nav>
       <div class="header-controls">
+        <button id="search-button" class="search-toggle" aria-label="{{ i18n "search.open_button_title" }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
         <div class="lang-switcher">
           <a href="/en/" lang="en" class="{{ if eq site.Language.Lang "en" }}active{{ end }}">EN</a>
           <a href="/zh/" lang="zh" class="{{ if eq site.Language.Lang "zh" }}active{{ end }}">中文</a>

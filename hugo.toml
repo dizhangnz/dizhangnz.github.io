@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'Hi Di'
 theme = 'mytheme'
 defaultContentLanguageInSubdir = true
+
+[outputs]
+home = ["HTML", "JSON"]

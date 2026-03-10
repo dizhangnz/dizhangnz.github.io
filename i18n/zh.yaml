@@ -50,6 +50,7 @@ search:
   open_button_title: "搜索 (/)"
   close_button_title: "关闭 (Esc)"
   input_placeholder: "搜索"
+  no_results: "未找到结果"
 
 sharing:
   email: "通过电子邮件发送"

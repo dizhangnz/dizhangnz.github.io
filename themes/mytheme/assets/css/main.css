@@ -91,7 +91,7 @@ img {
 /* Header */
 header {
   padding: var(--space-xl) 0;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
   animation: fadeSlideDown 0.6s ease-out;
   text-align: center;
 }
@@ -703,4 +703,35 @@ button:focus-visible {
 /* Dark mode code blocks */
 [data-theme="dark"] pre {
   background: #0f0e0d;
+}
+
+/* Search Toggle Button */
+.search-toggle {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.search-toggle:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--border-color);
+}
+
+.search-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: var(--text-muted);
+  stroke-width: 2;
+  transition: stroke var(--transition-fast);
+}
+
+.search-toggle:hover svg {
+  stroke: var(--text-primary);
 }
